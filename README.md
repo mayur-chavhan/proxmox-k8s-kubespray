@@ -1,4 +1,4 @@
-# Proxmox LXC Kubernetes Lab (Terraform + Kubespray)
+# Proxmox VM Kubernetes Lab (Terraform + Kubespray)
 
 This repository provisions cloud-init VMs on your local Proxmox host (`192.168.x.x`) and installs Kubernetes with Kubespray.
 
@@ -118,7 +118,7 @@ make kubespray-upgrade
 make kubespray-reset
 ```
 
-- Destroy LXC infrastructure:
+- Destroy VM infrastructure:
 
 ```bash
 make tf-destroy
