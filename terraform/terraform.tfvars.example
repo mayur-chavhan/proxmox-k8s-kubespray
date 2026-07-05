@@ -1,0 +1,38 @@
+# Most-frequent changes (you usually edit these values)
+cluster_name    = "k8s-lab"
+cluster_profile = "small"
+
+# Proxmox endpoint
+proxmox_api_url     = "https://192.168.1.9:8006/api2/json"
+proxmox_target_node = "pve"
+
+# Preferred auth: API token
+proxmox_api_token_id     = "terraform-prov@pve!tf"
+proxmox_api_token_secret = "REPLACE_ME"
+
+# If you prefer user/password auth, set these and keep token values null
+# proxmox_username = "terraform-prov@pve"
+# proxmox_password = "REPLACE_ME"
+
+# VM template and cloud-init
+vm_template_name   = "ubuntu"
+vm_template_vmid   = 9000
+vm_cloud_init_user = "ubuntu"
+vm_cloud_init_storage = "local-lvm"
+vm_boot_disk_slot  = "virtio0"
+ssh_public_key_path = "~/.ssh/id_ed25519.pub"
+
+# Common networking
+node_network_cidr = "192.168.1.0/24"
+node_gateway     = "192.168.1.1"
+proxmox_bridge   = "vmbr0"
+nameserver       = "1.1.1.1"
+search_domain    = "home.local"
+
+# Optional VMID/IP offsets
+start_vmid             = 3000
+control_plane_ip_start = 50
+worker_ip_start        = 70
+
+# Optional behavior
+enable_protection = false

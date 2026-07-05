@@ -1,0 +1,27 @@
+.DS_Store
+
+# Terraform
+**/.terraform/*
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+terraform.tfvars*
+!terraform.tfvars.example
+*.auto.tfvars
+
+# Python / Ansible
+.venv/
+.venv-*/
+venv/
+*.pyc
+*.retry
+
+# Kubespray / Ansible Generated
+kubespray/upstream/
+kubespray/inventory/*/facts.yml
+kubespray/inventory/*/artifacts/
+kubespray/inventory/*/credentials/
